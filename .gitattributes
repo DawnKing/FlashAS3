@@ -3,5 +3,5 @@
 - 3rd[-_]?party/
 - vendors?/
 - extern(al)?/
-- html-template?/
-- js?/
+- (^|/)html[-_]?template?/
+- (^|/)js?/
