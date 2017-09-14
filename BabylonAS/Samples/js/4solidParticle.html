@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <title>Babylon - Getting Started</title>
+    <!-- link to the last version of babylon -->
+    <script src="babylon.max.js"></script>
+    <style>
+        html, body {
+            overflow: hidden;
+            width   : 100%;
+            height  : 100%;
+            margin  : 0;
+            padding : 0;
+        }
+
+        #renderCanvas {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+
+            var canvas = document.getElementById('renderCanvas');
+            var engine = new BABYLON.Engine(canvas, true);
+
+            var scene = new BABYLON.Scene(engine);
+            // scene.lightsEnabled = false;
+
+            // var camera = new BABYLON.TargetCamera('camera1', new BABYLON.Vector3(0, 10, -10), scene);
+            // camera.setTarget(new BABYLON.Vector3(0, 0, 0));
+
+            var camera = new BABYLON.ArcRotateCamera("camera1",  0, 0, 0, new BABYLON.Vector3(0, 0, 0), scene);
+            camera.setPosition(new BABYLON.Vector3(0, 10, -10));
+            camera.attachControl(canvas, true);
+
+            // var pl = new BABYLON.DirectionalLight("pl", new BABYLON.Vector3(0, -1, 0), scene);
+            // pl.diffuse = new BABYLON.Color3(1, 1, 1);
+            // pl.intensity = 1.0;
+            var light = new BABYLON.PointLight("dir01", new BABYLON.Vector3(0, 1, 1), scene);
+
+            // texture and material
+            var url = "assets/buff.png";
+            var mat = new BABYLON.StandardMaterial("mat1", scene);
+            mat.backFaceCulling = true;
+            var texture = new BABYLON.Texture(url, scene);
+            texture.hasAlpha = true;
+            texture.uOffset = 0.25;
+            texture.vOffset = 0.5;
+            texture.uScale = 0.25;
+            texture.vScale = 0.5;
+            mat.diffuseTexture = texture;
+
+            // SPS creation
+            var plane = BABYLON.Mesh.CreatePlane("plane", 5, scene);
+            var SPS = new BABYLON.SolidParticleSystem('SPS', scene);
+            SPS.addShape(plane, 1);
+            var mesh = SPS.buildMesh();
+            mesh.useVertexColors = false;
+            mesh.material = mat;
+            plane.dispose();  // free memory
+
+            // init
+            SPS.initParticles = function() {
+                // just recycle everything
+                for (var p = 0; p < this.nbParticles; p++) {
+                    var particle = this.particles[p];
+
+                    particle.position.x = 0;
+                    particle.position.y = 0;
+                    particle.position.z = 0;
+
+                    particle.rotation.x = 1/2 * Math.PI;
+
+                    this.recycleParticle(particle);
+                }
+            };
+
+            // recycle
+            SPS.recycleParticle = function(particle) {
+                texture.uOffset += 0.25;
+            };
+
+            var frame = 0;
+            SPS.updateParticle = function(particle) {  
+                if (frame++ % 10 == 0)
+                    this.recycleParticle(particle);
+
+                particle.rotation.y += 0.008;
+            };
+
+
+            // init all particle values and set them once to apply textures, colors, etc
+            SPS.initParticles();
+            SPS.setParticles();
+
+            // Tuning : plane particles facing, so billboard and no rotation computation
+            // colors not changing then, neither textures
+            //SPS.billboard = true;
+            //SPS.computeParticleRotation = false;
+            SPS.computeParticleColor = false;
+            SPS.computeParticleTexture = false;
+
+            //scene.debugLayer.show();
+            // animation
+            scene.registerBeforeRender(function() {
+                SPS.setParticles();
+            });
+
+            engine.runRenderLoop(function(){
+                scene.render();
+            });
+
+            window.addEventListener('resize', function(){
+                engine.resize();
+            });
+
+
+        });
+    </script>
+</body>
+</html>

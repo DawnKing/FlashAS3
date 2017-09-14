@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <title>Babylon - Getting Started</title>
+    <!-- link to the last version of babylon -->
+    <script src="babylon.max.js"></script>
+    <style>
+        html, body {
+            overflow: hidden;
+            width   : 100%;
+            height  : 100%;
+            margin  : 0;
+            padding : 0;
+        }
+
+        #renderCanvas {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+
+            var canvas = document.getElementById('renderCanvas');
+            var engine = new BABYLON.Engine(canvas, true);
+
+            var scene = new BABYLON.Scene(engine);
+
+            var camera = new BABYLON.TargetCamera('camera1', new BABYLON.Vector3(0, 100, 100), scene);
+            camera.setTarget(new BABYLON.Vector3(0, 0, 0));
+
+            //var light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(-0.5, -0.5, -1.0), scene);
+            var light = new BABYLON.PointLight("dir01", new BABYLON.Vector3(0, 50, 50), scene);
+
+            BABYLON.SceneLoader.ImportMesh("15_RootNode", "assets/", "box.babylon", scene, function (newMeshes2, particleSystems2, skeletons2) {
+                for (var i = 0; i < newMeshes2.length; i++) {
+                    newMeshes2[i].position = new BABYLON.Vector3(-10, 0, 0);
+                }
+            });
+
+            // BABYLON.SceneLoader.ImportMesh("him", "assets/Dude/", "dude.babylon", scene, function (newMeshes2, particleSystems2, skeletons2) {
+            BABYLON.SceneLoader.ImportMesh("15_RootNode", "assets/", "box_move.babylon", scene, function (newMeshes2, particleSystems2, skeletons2) {
+                // var material = new BABYLON.ShaderMaterial("color material", scene, "color", {});
+                // material.setColor4("color", new BABYLON.Color4(1, 0, 0, 1));
+                // for (var i = 0; i < newMeshes2.length; i++) {
+                //     newMeshes2[i].material = material;
+                // }
+
+                // var dude = newMeshes2[0];
+                // dude.rotation.y = Math.PI;
+                // dude.position = new BABYLON.Vector3(0, 0, -80);
+                // scene.beginAnimation(skeletons2[0], 0, 100, true, 1.0);
+            });
+
+            engine.runRenderLoop(function(){
+                scene.render();
+            });
+
+            window.addEventListener('resize', function(){
+                engine.resize();
+            });
+
+
+        });
+    </script>
+</body>
+</html>

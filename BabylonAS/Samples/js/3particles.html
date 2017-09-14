@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <title>Babylon - Getting Started</title>
+    <!-- link to the last version of babylon -->
+    <script src="babylon.max.js"></script>
+    <style>
+        html, body {
+            overflow: hidden;
+            width   : 100%;
+            height  : 100%;
+            margin  : 0;
+            padding : 0;
+        }
+
+        #renderCanvas {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+
+            var canvas = document.getElementById('renderCanvas');
+            var engine = new BABYLON.Engine(canvas, true);
+
+            var scene = new BABYLON.Scene(engine);
+
+            var camera = new BABYLON.TargetCamera('camera1', new BABYLON.Vector3(0, 5, 5), scene);
+            camera.setTarget(new BABYLON.Vector3(0, 0, 0));
+
+            // Emitters
+            var emitter0 = BABYLON.Mesh.CreateBox("emitter0", 0.1, scene);
+            emitter0.isVisible = false;
+
+            // Particles
+            var particleSystem = new BABYLON.ParticleSystem("particles", 100, scene);
+            particleSystem.particleTexture = new BABYLON.Texture("assets/Flare.png", scene);
+            particleSystem.minAngularSpeed = -0.5;
+            particleSystem.maxAngularSpeed = 0.5;
+            particleSystem.minSize = 0.1;
+            particleSystem.maxSize = 0.5;
+            particleSystem.minLifeTime = 0.5;
+            particleSystem.maxLifeTime = 2.0;
+            particleSystem.minEmitPower = 0.5;
+            particleSystem.maxEmitPower = 4.0;
+            particleSystem.emitter = emitter0;
+            particleSystem.emitRate = 400;
+            particleSystem.blendMode = BABYLON.ParticleSystem.BLENDMODE_ONEONE;
+            particleSystem.minEmitBox = new BABYLON.Vector3(-0.5, 0, -0.5);
+            particleSystem.maxEmitBox = new BABYLON.Vector3(0.5, 0, 0.5);
+            particleSystem.direction1 = new BABYLON.Vector3(-1, 1, -1);
+            particleSystem.direction2 = new BABYLON.Vector3(1, 1, 1);
+            particleSystem.color1 = new BABYLON.Color4(1, 0, 0, 1);
+            particleSystem.color2 = new BABYLON.Color4(0, 1, 1, 1);
+            particleSystem.gravity = new BABYLON.Vector3(0, -2.0, 0);
+            particleSystem.start();
+
+
+            engine.runRenderLoop(function(){
+                scene.render();
+            });
+
+            window.addEventListener('resize', function(){
+                engine.resize();
+            });
+
+
+        });
+    </script>
+</body>
+</html>

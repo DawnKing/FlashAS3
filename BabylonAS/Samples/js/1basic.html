@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+    <title>Babylon - Getting Started</title>
+    <script src="babylon.max.js"></script>
+    <style>
+        html, body {
+            overflow: hidden;
+            width   : 100%;
+            height  : 100%;
+            margin  : 0;
+            padding : 0;
+        }
+
+        #renderCanvas {
+            width   : 100%;
+            height  : 100%;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+
+
+            // get the canvas DOM element
+            var canvas = document.getElementById('renderCanvas');
+
+            // load the 3D engine
+            var engine = new BABYLON.Engine(canvas, true);
+            var box;
+
+            // createScene function that creates and return the scene
+            var createScene = function(){
+                // create a basic BJS Scene object
+                var scene = new BABYLON.Scene(engine);
+
+                // create a FreeCamera, and set its position to (x:0, y:5, z:10)
+                var camera = new BABYLON.TargetCamera('camera1', new BABYLON.Vector3(0, 5, 10), scene);
+
+                // target the camera to scene origin
+                camera.setTarget(BABYLON.Vector3.Zero());
+
+                // create a built-in "sphere" shape; its constructor takes 5 params: name, width, depth, subdivisions, scene
+                box = BABYLON.Mesh.CreateBox('box', 2, scene);
+
+                var material = new BABYLON.ShaderMaterial("color material", scene, "color", {});
+                material.setColor4("color", new BABYLON.Color4(1, 0, 0, 1));
+                box.material = material;
+
+                box2 = BABYLON.Mesh.CreateBox('box', 2, scene);
+                box2.material = material;
+                box2.position = new BABYLON.Vector3(-5, 0, 0);
+
+                // return the created scene
+                return scene;
+            }
+
+            // call the createScene function
+            var scene = createScene();
+
+            // run the render loop
+            engine.runRenderLoop(function(){
+                box.rotation.y += 0.02;
+                scene.render();
+            });
+
+            // the canvas/window resize event handler
+            window.addEventListener('resize', function(){
+                engine.resize();
+            });
+
+            
+        });
+    </script>
+</body>
+</html>
