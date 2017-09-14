@@ -1,7 +1,1 @@
-# Vendored dependencies
-- third[-_]?party/
-- 3rd[-_]?party/
-- vendors?/
-- extern(al)?/
-- (^|/)html[-_]?template?/
-- (^|/)js?/
+- babylon.max.js
