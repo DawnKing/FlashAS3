@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TextureAtlas imagePath="effect - 副本 (2).png">
+  <SubTexture name="05.png" x="0" y="0" width="234" height="134" frameX="-10" frameY="-36" frameWidth="250" frameHeight="200" />
+  <SubTexture name="04.png" x="234" y="0" width="232" height="135" frameX="-12" frameY="-35" frameWidth="250" frameHeight="200" />
+  <SubTexture name="03.png" x="0" y="134" width="226" height="131" frameX="-16" frameY="-37" frameWidth="250" frameHeight="200" />
+  <SubTexture name="02.png" x="0" y="265" width="129" height="222" frameX="-16" frameY="-37" frameWidth="250" frameHeight="200" rotated="true" />
+  <SubTexture name="06.png" x="129" y="265" width="118" height="200" frameX="-26" frameY="-44" frameWidth="250" frameHeight="200" rotated="true" />
+  <SubTexture name="07.png" x="226" y="135" width="199" height="115" frameX="-27" frameY="-46" frameWidth="250" frameHeight="200" />
+  <SubTexture name="01.png" x="247" y="250" width="120" height="189" frameX="-32" frameY="-39" frameWidth="250" frameHeight="200" rotated="true" />
+  <SubTexture name="00.png" x="425" y="135" width="84" height="119" frameX="-68" frameY="-54" frameWidth="250" frameHeight="200" rotated="true" />
+</TextureAtlas>

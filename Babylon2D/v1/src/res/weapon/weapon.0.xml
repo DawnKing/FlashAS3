@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<TextureAtlas imagePath="weapon.0.png">
+  <SubTexture name="0-0-0.png" x="0" y="0" width="159" height="63" frameX="-109" frameY="-115" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-0-1.png" x="159" y="0" width="160" height="62" frameX="-108" frameY="-115" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-0-2.png" x="319" y="0" width="157" height="58" frameX="-111" frameY="-116" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-0-3.png" x="476" y="0" width="158" height="58" frameX="-110" frameY="-116" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-0-4.png" x="634" y="0" width="157" height="54" frameX="-111" frameY="-118" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-0-5.png" x="791" y="0" width="158" height="58" frameX="-110" frameY="-117" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-1-0.png" x="949" y="0" width="58" height="163" frameX="-105" frameY="-121" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-1-1.png" x="634" y="54" width="59" height="163" frameX="-105" frameY="-121" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-1-2.png" x="693" y="54" width="57" height="163" frameX="-105" frameY="-120" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-1-3.png" x="750" y="58" width="163" height="55" frameX="-105" frameY="-119" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-1-4.png" x="750" y="113" width="163" height="56" frameX="-105" frameY="-119" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-1-5.png" x="913" y="163" width="64" height="163" frameX="-105" frameY="-118" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-2-0.png" x="750" y="169" width="148" height="86" frameX="-102" frameY="-111" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-2-1.png" x="319" y="58" width="148" height="84" frameX="-103" frameY="-112" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-2-2.png" x="159" y="62" width="148" height="78" frameX="-103" frameY="-116" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-2-3.png" x="0" y="63" width="149" height="78" frameX="-101" frameY="-115" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-2-4.png" x="467" y="58" width="146" height="77" frameX="-103" frameY="-117" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-2-5.png" x="467" y="135" width="148" height="80" frameX="-103" frameY="-115" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-3-0.png" x="149" y="140" width="92" height="72" frameX="-110" frameY="-113" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-3-1.png" x="241" y="140" width="70" height="93" frameX="-111" frameY="-112" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-3-2.png" x="0" y="141" width="92" height="68" frameX="-111" frameY="-111" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-3-3.png" x="0" y="209" width="93" height="64" frameX="-112" frameY="-110" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-3-4.png" x="93" y="212" width="92" height="68" frameX="-110" frameY="-111" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-3-5.png" x="0" y="273" width="92" height="71" frameX="-111" frameY="-112" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-4-0.png" x="311" y="142" width="133" height="117" frameX="-31" frameY="-106" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-4-1.png" x="185" y="233" width="120" height="132" frameX="-28" frameY="-107" frameWidth="268" frameHeight="268" />
+  <SubTexture name="0-4-2.png" x="0" y="344" width="130" height="122" frameX="-26" frameY="-107" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-4-3.png" x="444" y="215" width="131" height="127" frameX="-25" frameY="-105" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-4-4.png" x="305" y="259" width="134" height="126" frameX="-27" frameY="-102" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="0-4-5.png" x="130" y="365" width="133" height="122" frameX="-28" frameY="-104" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-0-0.png" x="575" y="217" width="152" height="78" frameX="-118" frameY="-98" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-0-1.png" x="727" y="255" width="152" height="71" frameX="-124" frameY="-99" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-0-2.png" x="575" y="295" width="148" height="78" frameX="-124" frameY="-104" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-0-3.png" x="0" y="466" width="90" height="149" frameX="-124" frameY="-102" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-0-4.png" x="439" y="342" width="102" height="151" frameX="-122" frameY="-102" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-0-5.png" x="263" y="385" width="160" height="95" frameX="-118" frameY="-94" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-1-0.png" x="263" y="480" width="146" height="60" frameX="-76" frameY="-104" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-1-1.png" x="90" y="487" width="146" height="68" frameX="-70" frameY="-104" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-1-2.png" x="723" y="326" width="150" height="60" frameX="-80" frameY="-104" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-1-3.png" x="977" y="163" width="45" height="157" frameX="-94" frameY="-105" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-1-4.png" x="977" y="320" width="43" height="165" frameX="-104" frameY="-101" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-1-5.png" x="541" y="373" width="162" height="47" frameX="-93" frameY="-100" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-2-0.png" x="873" y="326" width="104" height="140" frameX="0" frameY="-104" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-2-1.png" x="703" y="386" width="141" height="98" frameX="0" frameY="-106" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-2-2.png" x="844" y="466" width="115" height="141" frameX="0" frameY="-99" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-2-3.png" x="541" y="420" width="135" height="133" frameX="-7" frameY="-96" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-2-4.png" x="409" y="493" width="122" height="141" frameX="-17" frameY="-98" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-2-5.png" x="676" y="484" width="131" height="131" frameX="-8" frameY="-100" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-3-0.png" x="531" y="553" width="141" height="53" frameX="0" frameY="-100" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-3-1.png" x="531" y="606" width="141" height="50" frameX="0" frameY="-100" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-3-2.png" x="959" y="485" width="55" height="141" frameX="0" frameY="-101" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-3-3.png" x="807" y="607" width="141" height="72" frameX="0" frameY="-100" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-3-4.png" x="236" y="540" width="142" height="84" frameX="0" frameY="-100" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-3-5.png" x="948" y="626" width="74" height="142" frameX="0" frameY="-98" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-4-0.png" x="844" y="386" width="29" height="70" frameX="-73" frameY="-92" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-4-1.png" x="92" y="141" width="30" height="68" frameX="-74" frameY="-90" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-4-2.png" x="913" y="58" width="33" height="73" frameX="-68" frameY="-89" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="1-4-3.png" x="92" y="280" width="90" height="32" frameX="-51" frameY="-97" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-4-4.png" x="672" y="615" width="97" height="40" frameX="-45" frameY="-100" frameWidth="268" frameHeight="268" />
+  <SubTexture name="1-4-5.png" x="807" y="484" width="35" height="89" frameX="-53" frameY="-98" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-0-0.png" x="672" y="655" width="120" height="76" frameX="-110" frameY="-70" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-0-1.png" x="90" y="555" width="93" height="74" frameX="-119" frameY="-26" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-0-2.png" x="183" y="555" width="45" height="92" frameX="-105" frameY="-28" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-0-3.png" x="792" y="679" width="117" height="116" frameX="-81" frameY="-82" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-0-4.png" x="228" y="624" width="146" height="142" frameX="-126" frameY="-22" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-0-5.png" x="0" y="615" width="75" height="162" frameX="-106" frameY="-107" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-1-0.png" x="0" y="795" width="56" height="181" frameX="-86" frameY="-101" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-1-1.png" x="75" y="629" width="84" height="127" frameX="-141" frameY="-48" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-1-2.png" x="909" y="768" width="109" height="80" frameX="-141" frameY="-44" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-1-3.png" x="75" y="756" width="128" height="114" frameX="-24" frameY="-84" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-1-4.png" x="56" y="870" width="134" height="151" frameX="-134" frameY="-60" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-1-5.png" x="190" y="870" width="86" height="102" frameX="-105" frameY="-108" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-2-0.png" x="203" y="766" width="144" height="93" frameX="-86" frameY="-96" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-2-1.png" x="374" y="634" width="136" height="77" frameX="-132" frameY="-100" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-2-2.png" x="190" y="972" width="131" height="36" frameX="-137" frameY="-98" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-2-3.png" x="321" y="859" width="87" height="164" frameX="-16" frameY="-85" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-2-4.png" x="374" y="731" width="204" height="118" frameX="-64" frameY="-104" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-2-5.png" x="408" y="849" width="100" height="109" frameX="-33" frameY="-92" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-3-0.png" x="510" y="656" width="111" height="73" frameX="-78" frameY="-89" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-3-1.png" x="508" y="849" width="97" height="139" frameX="-124" frameY="-119" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-3-2.png" x="605" y="729" width="67" height="138" frameX="-130" frameY="-120" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-3-3.png" x="672" y="731" width="70" height="177" frameX="-11" frameY="-65" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-3-4.png" x="605" y="908" width="237" height="101" frameX="0" frameY="-115" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-3-5.png" x="742" y="795" width="150" height="72" frameX="0" frameY="-89" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-4-0.png" x="842" y="867" width="98" height="133" frameX="-21" frameY="-83" frameWidth="268" frameHeight="268" rotated="true" />
+  <SubTexture name="2-4-1.png" x="940" y="848" width="76" height="116" frameX="-74" frameY="-110" frameWidth="268" frameHeight="268" />
+  <SubTexture name="2-4-2.png" x="276" y="859" width="45" height="96" frameX="-118" frameY="-121" frameWidth="268" frameHeight="268" />
+</TextureAtlas>
